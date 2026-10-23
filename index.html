@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GYMRATBURAT PHOTOS — Vol. 01 / Eight Frames</title>
+  <meta name="description" content="GYMRATBURAT PHOTOS — an eight-frame photo library of gym floors, late nights, good people and zero filters. Volume one.">
+  <meta name="theme-color" content="#0a0b09">
+  <meta property="og:title" content="GYMRATBURAT PHOTOS — Vol. 01">
+  <meta property="og:description" content="Eight frames. One rat. Zero filters. Explore the archive.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/photos/03-peace-sign-800.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23c9ff3f'/%3E%3Ctext x='32' y='49' font-family='Arial Black, sans-serif' font-size='48' font-weight='900' text-anchor='middle' fill='%230a0b09'%3E%E2%9C%B3%3C/text%3E%3C/svg%3E">
+
+  <link rel="preload" as="image" href="assets/photos/03-peace-sign.jpg"
+        imagesrcset="assets/photos/03-peace-sign-800.jpg 800w, assets/photos/03-peace-sign.jpg 1200w"
+        imagesizes="(max-width: 900px) 88vw, 34vw">
+  <link rel="stylesheet" href="styles.css">
+
+  <script>
+    (function () {
+      var root = document.documentElement;
+      root.classList.add('js');
+      try {
+        var saved = localStorage.getItem('grb-theme');
+        if (saved === 'light' || saved === 'dark') root.setAttribute('data-theme', saved);
+      } catch (e) {}
+      window.addEventListener('DOMContentLoaded', function () {
+        window.setTimeout(function () {
+          if (!document.body.classList.contains('loaded')) {
+            document.body.classList.add('loaded');
+            var reveals = document.querySelectorAll('[data-reveal]');
+            for (var i = 0; i < reveals.length; i += 1) reveals[i].classList.add('is-revealed');
+          }
+        }, 6000);
+      });
+    })();
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="scroll-progress" aria-hidden="true"><span id="scroll-progress-bar"></span></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <div class="cursor" id="cursor" aria-hidden="true">
+    <span class="cursor__dot"></span>
+    <span class="cursor__ring"><span class="cursor__label">VIEW</span></span>
+  </div>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader__top">
+      <span>GYMRATBURAT <em>photos</em></span>
+      <span>VOL. 01 — 2026</span>
+    </div>
+    <div class="preloader__center">
+      <span class="preloader__count" id="load-count">00</span>
+      <span class="preloader__pct">%</span>
+    </div>
+    <div class="preloader__bottom">
+      <div class="preloader__bar"><span id="load-bar"></span></div>
+      <div class="preloader__meta">
+        <span>LOADING THE ARCHIVE</span>
+        <span>EIGHT FRAMES / ZERO FILTERS</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header" id="site-header">
+    <a class="brand" href="#top" aria-label="GYMRATBURAT PHOTOS — back to top">
+      <span class="brand__mark" aria-hidden="true">✳</span>
+      <span class="brand__text">GYMRATBURAT <em>photos</em></span>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="#archive"><span>01</span>Archive</a>
+      <a href="#story"><span>02</span>Story</a>
+      <a href="#reel"><span>03</span>Reel</a>
+      <a href="#next"><span>04</span>Next</a>
+    </nav>
+
+    <div class="header-actions">
+      <span class="vol-badge">VOL. 01 <i>/</i> 08</span>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to light theme" aria-pressed="false" title="Toggle the lights">
+        <svg class="theme-toggle__sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+          <circle cx="12" cy="12" r="4"></circle>
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.65 17.65l1.42 1.42M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.65 6.35l1.42-1.42"></path>
+        </svg>
+        <svg class="theme-toggle__moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+          <path d="M20 14.3A8.2 8.2 0 0 1 9.7 4a8.5 8.5 0 1 0 10.3 10.3Z"></path>
+        </svg>
+      </button>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="menu-toggle__label">Menu</span>
+        <span class="menu-toggle__lines" aria-hidden="true"><i></i><i></i></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <div class="mobile-menu__top">
+      <span class="mobile-menu__brand">GYMRATBURAT <em>photos</em></span>
+      <button class="mobile-menu__close" id="menu-close" type="button" aria-label="Close menu">Close <span aria-hidden="true">✕</span></button>
+    </div>
+    <nav class="mobile-menu__nav" aria-label="Mobile navigation">
+      <a href="#archive"><span>01</span>Archive<em>→</em></a>
+      <a href="#story"><span>02</span>Story<em>→</em></a>
+      <a href="#reel"><span>03</span>Reel<em>→</em></a>
+      <a href="#next"><span>04</span>Next frame<em>→</em></a>
+    </nav>
+    <div class="mobile-menu__foot">
+      <p>8 FRAMES · ZERO FILTERS<br>ALL GAINS, NO REGRETS.</p>
+      <div class="mobile-menu__photo"><img src="assets/photos/02-tongue-out-800.jpg" alt="Portrait with tongue out" width="407" height="800" loading="lazy"></div>
+      <span class="mobile-menu__tag">VOL. 01 — 2026</span>
+    </div>
+  </div>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="top">
+      <div class="hero__backdrop" aria-hidden="true">
+        <span class="hero__ghost">BURAT</span>
+        <span class="hero__ghost hero__ghost--small">PHOTOS</span>
+        <div class="hero__grid"></div>
+      </div>
+
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <p class="eyebrow hero__eyebrow">
+            <span class="eyebrow__num">VOL. 01</span>
+            <span class="eyebrow__line"></span>
+            <span>Photo archive / 2026</span>
+          </p>
+
+          <h1 class="hero__title" aria-label="Gymratburat Photos">
+            <span class="hero__line"><span class="hero__word">GYMRAT</span></span>
+            <span class="hero__line hero__line--bottom">
+              <span class="hero__word hero__word--outline">BURAT</span>
+              <em class="hero__photos" aria-hidden="true">photos<sup>08</sup></em>
+            </span>
+          </h1>
+
+          <p class="hero__lede">Eight frames. One rat. Zero filters. A running archive of gym floors, late nights and the people who make it worth documenting.</p>
+
+          <div class="hero__actions">
+            <a class="btn btn--solid" href="#archive">
+              <span>Enter the archive</span>
+              <span class="btn__icon" aria-hidden="true">↓</span>
+            </a>
+            <button class="btn btn--ghost" id="play-reel" type="button">
+              <span>Play the reel</span>
+              <span class="btn__play" aria-hidden="true"><i></i></span>
+            </button>
+          </div>
+
+          <ul class="hero__meta" aria-label="Archive facts">
+            <li><strong>08</strong><span>Frames</span></li>
+            <li><strong>04</strong><span>Chapters</span></li>
+            <li><strong>00</strong><span>Filters</span></li>
+            <li><strong>∞</strong><span>Gains</span></li>
+          </ul>
+        </div>
+
+        <div class="hero__collage" aria-label="Featured photographs">
+          <figure class="hero-photo hero-photo--main" data-depth="10">
+            <span class="hero-photo__inner">
+              <img src="assets/photos/03-peace-sign.jpg"
+                   srcset="assets/photos/03-peace-sign-800.jpg 800w, assets/photos/03-peace-sign.jpg 1200w"
+                   sizes="(max-width: 900px) 66vw, 30vw"
+                   alt="Smiling on a wooden sofa with a peace sign"
+                   width="1200" height="1600" fetchpriority="high" decoding="async">
+              <span class="hero-photo__tag">FRAME 03 — LIFE</span>
+            </span>
+            <figcaption>Peace out. Living room, 2026.</figcaption>
+          </figure>
+
+          <figure class="hero-photo hero-photo--mini" data-depth="26">
+            <span class="hero-photo__inner">
+              <img src="assets/photos/01-suit-up.jpg"
+                   srcset="assets/photos/01-suit-up-800.jpg 320w, assets/photos/01-suit-up.jpg 435w"
+                   sizes="(max-width: 900px) 28vw, 13vw"
+                   alt="Portrait in a dark suit and tie"
+                   width="435" height="1089" loading="eager" decoding="async">
+            </span>
+            <figcaption>FRAME 01</figcaption>
+          </figure>
+
+          <figure class="hero-photo hero-photo--wide" data-depth="18">
+            <span class="hero-photo__inner">
+              <img src="assets/photos/08-the-crew.jpg"
+                   srcset="assets/photos/08-the-crew-800.jpg 800w, assets/photos/08-the-crew.jpg 1600w"
+                   sizes="(max-width: 900px) 52vw, 25vw"
+                   alt="Three friends posing inside a green-lit gym"
+                   width="1600" height="702" loading="eager" decoding="async">
+              <span class="hero-photo__tag">FRAME 08 — THE CREW</span>
+            </span>
+            <figcaption>Iron paradise, after hours.</figcaption>
+          </figure>
+
+          <div class="hero-sticker" data-depth="34" aria-hidden="true">
+            <svg class="hero-sticker__ring" viewBox="0 0 120 120">
+              <defs>
+                <path id="stickerPath" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"></path>
+              </defs>
+              <text>
+                <textPath href="#stickerPath">GYMRATBURAT · PHOTO ARCHIVE · EST. 2026 · </textPath>
+              </text>
+            </svg>
+            <span class="hero-sticker__star">✳</span>
+          </div>
+
+          <span class="hero__side-note" aria-hidden="true">SCROLL TO EXPLORE — 08 FRAMES INSIDE</span>
+        </div>
+      </div>
+
+      <a class="hero__scroll" href="#archive" aria-label="Scroll to the archive">
+        <span class="hero__scroll-text">Scroll to explore</span>
+        <span class="hero__scroll-line" aria-hidden="true"></span>
+      </a>
+    </section>
+
+    <!-- Ticker -->
+    <div class="ticker" aria-label="GYMRATBURAT PHOTOS — eight frames, zero filters">
+      <div class="ticker__track">
+        <div class="ticker__group">
+          <span>GYMRATBURAT PHOTOS</span><i>✳</i>
+          <span>8 FRAMES</span><i>✳</i>
+          <span>NO FILTERS</span><i>✳</i>
+          <span>ALL GAINS</span><i>✳</i>
+          <span>VOL. 01</span><i>✳</i>
+          <span>SHOT HONEST</span><i>✳</i>
+        </div>
+        <div class="ticker__group" aria-hidden="true">
+          <span>GYMRATBURAT PHOTOS</span><i>✳</i>
+          <span>8 FRAMES</span><i>✳</i>
+          <span>NO FILTERS</span><i>✳</i>
+          <span>ALL GAINS</span><i>✳</i>
+          <span>VOL. 01</span><i>✳</i>
+          <span>SHOT HONEST</span><i>✳</i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Archive -->
+    <section class="section archive" id="archive">
+      <div class="container">
+        <header class="archive__head">
+          <p class="eyebrow" data-reveal>
+            <span class="eyebrow__num">01</span>
+            <span class="eyebrow__line"></span>
+            <span>The archive</span>
+          </p>
+
+          <div class="archive__intro">
+            <h2 class="display display--xl" data-reveal>EIGHT FRAMES.<br><em>one story.</em></h2>
+            <div class="archive__blurb" data-reveal data-reveal-delay="1">
+              <p>No mood boards. No staged sets. Just whatever the light was doing when the moment happened — a suit, a sofa, a set of dumbbells and the crew.</p>
+              <span class="micro-label">CLICK ANY FRAME TO OPEN IT FULL SIZE</span>
+            </div>
+          </div>
+        </header>
+
+        <div class="archive__toolbar" data-reveal>
+          <div class="filters" role="group" aria-label="Filter photographs by category">
+            <button class="filter is-active" type="button" data-filter="all" aria-pressed="true">All <span>08</span></button>
+            <button class="filter" type="button" data-filter="gym" aria-pressed="false">Gym <span>03</span></button>
+            <button class="filter" type="button" data-filter="portrait" aria-pressed="false">Portraits <span>02</span></button>
+            <button class="filter" type="button" data-filter="life" aria-pressed="false">Life <span>02</span></button>
+            <button class="filter" type="button" data-filter="street" aria-pressed="false">Street <span>01</span></button>
+          </div>
+          <p class="archive__count" aria-live="polite"><span id="visible-count">08</span><i>/</i> 08 frames</p>
+        </div>
+
+        <div class="photo-grid" id="photo-grid">
+          <!-- 03 -->
+          <button class="photo-card card--03" type="button" data-category="life" data-number="03"
+                  data-full="assets/photos/03-peace-sign.jpg" data-title="Peace out" data-tag="Life"
+                  data-location="Living room" data-cursor="view" aria-label="Open frame 03, Peace out">
+            <span class="photo-card__frame">
+              <img src="assets/photos/03-peace-sign.jpg"
+                   srcset="assets/photos/03-peace-sign-800.jpg 800w, assets/photos/03-peace-sign.jpg 1200w"
+                   sizes="(max-width: 700px) 92vw, (max-width: 1024px) 44vw, 40vw"
+                   alt="Smiling on a wooden sofa with a peace sign"
+                   width="1200" height="1600" loading="lazy" decoding="async">
+              <span class="photo-card__shade" aria-hidden="true"></span>
+              <span class="photo-card__index">03</span>
+              <span class="photo-card__tag">Life</span>
+              <span class="photo-card__open" aria-hidden="true">View frame <i>↗</i></span>
+            </span>
+            <span class="photo-card__meta">
+              <span class="photo-card__titles">
+                <span class="photo-card__title">Peace out</span>
+                <span class="photo-card__loc">Living room</span>
+              </span>
+              <span class="photo-card__arrow" aria-hidden="true">↗</span>
+            </span>
+          </button>
+
+          <!-- 07 -->
+          <button class="photo-card card--07" type="button" data-category="gym" data-number="07"
+                  data-full="assets/photos/07-heavy-lift.jpg" data-title="Heavy lift" data-tag="Gym"
+                  data-location="The floor" data-cursor="view" aria-label="Open frame 07, Heavy lift">
+            <span class="photo-card__frame">
+              <img src="assets/photos/07-heavy-lift.jpg"
+                   srcset="assets/photos/07-heavy-lift-800.jpg 800w, assets/photos/07-heavy-lift.jpg 1200w"
+                   sizes="(max-width: 700px) 92vw, (max-width: 1024px) 44vw, 33vw"
+                   alt="Dumbbell curl caught mid-rep at the gym"
+                   width="1200" height="1600" loading="lazy" decoding="async">
+              <span class="photo-card__shade" aria-hidden="true"></span>
+              <span class="photo-card__index">07</span>
+              <span class="photo-card__tag">Gym</span>
+              <span class="photo-card__open" aria-hidden="true">View frame <i>↗</i></span>
+            </span>
+            <span class="photo-card__meta">
+              <span class="photo-card__titles">
+                <span class="photo-card__title">Heavy lift</span>
+                <span class="photo-card__loc">The floor</span>
+              </span>
+              <span class="photo-card__arrow" aria-hidden="true">↗</span>
+            </span>
+          </button>
+
+          <!-- 01 -->
+          <button class="photo-card card--01" type="button" data-category="portrait" data-number="01"
+                  data-full="assets/photos/01-suit-up.jpg" data-title="Suit up" data-tag="Portrait"
+                  data-location="Somewhere formal" data-cursor="view" aria-label="Open frame 01, Suit up">
+            <span class="photo-card__frame">
+              <img src="assets/photos/01-suit-up.jpg"
+                   srcset="assets/photos/01-suit-up-800.jpg 320w, assets/photos/01-suit-up.jpg 435w"
+                   sizes="(max-width: 700px) 92vw, (max-width: 1024px) 44vw, 25vw"
+                   alt="Portrait in a dark suit and tie"
+                   width="435" height="1089" loading="lazy" decoding="async">
+              <span class="photo-card__shade" aria-hidden="true"></span>
+              <span class="photo-card__index">01</span>
+              <span class="photo-card__tag">Portrait</span>
+              <span class="photo-card__open" aria-hidden="true">View frame <i>↗</i></span>
+            </span>
+            <span class="photo-card__meta">
+              <span class="photo-card__titles">
+                <span class="photo-card__title">Suit up</span>
+                <span class="photo-card__loc">Somewhere formal</span>
+              </span>
+              <span class="photo-card__arrow" aria-hidden="true">↗</span>
+            </span>
+          </button>
+
+          <!-- 04 -->
+          <button class="photo-card card--04" type="button" data-category="street" data-number="04"
+                  data-full="assets/photos/04-night-shift.jpg" data-title="Night shift" data-tag="Street"
+                  data-location="After hours" data-cursor="view" aria-label="Open frame 04, Night shift">
+            <span class="photo-card__frame">
+              <img src="assets/photos/04-night-shift.jpg"
+                   srcset="assets/photos/04-night-shift-800.jpg 800w, assets/photos/04-night-shift.jpg 900w"
+                   sizes="(max-width: 700px) 92vw, (max-width: 1024px) 44vw, 25vw"
+                   alt="Night-time selfie outside under an overhead light"
+                   width="900" height="1600" loading="lazy" decoding="async">
+              <span class="photo-card__shade" aria-hidden="true"></span>
+              <span class="photo-card__index">04</span>
+              <span class="photo-card__tag">Street</span>
+              <span class="photo-card__open" aria-hidden="true">View frame <i>↗</i></span>
+            </span>
+            <span class="photo-card__meta">
+              <span class="photo-card__titles">
+                <span class="photo-card__title">Night shift</span>
+                <span class="photo-card__loc">After hours</span>
+              </span>
+              <span class="photo-card__arrow" aria-hidden="true">↗</span>
+            </span>
+          </button>
+
+          <!-- 08 -->
+          <button class="photo-card card--08" type="button" data-category="gym" data-number="08"
+                  data-full="assets/photos/08-the-crew.jpg" data-title="The crew" data-tag="Gym"
+                  data-location="Squad session" data-cursor="view" aria-label="Open frame 08, The crew">
+            <span class="photo-card__frame">
+              <img src="assets/photos/08-the-crew.jpg"
+                   srcset="assets/photos/08-the-crew-800.jpg 800w, assets/photos/08-the-crew.jpg 1600w"
+                   sizes="(max-width: 700px) 92vw, (max-width: 1024px) 96vw, 50vw"
+                   alt="Three friends posing inside a green-lit gym"
+                   width="1600" height="702" loading="lazy" decoding="async">
+              <span class="photo-card__shade" aria-hidden="true"></span>
+              <span class="photo-card__index">08</span>
+              <span class="photo-card__tag">Gym</span>
+              <span class="photo-card__open" aria-hidden="true">View frame <i>↗</i></span>
+            </span>
+            <span class="photo-card__meta">
+              <span class="photo-card__titles">
+                <span class="photo-card__title">The crew</span>
+                <span class="photo-card__loc">Squad session</span>
+              </span>
+              <span class="photo-card__arrow" aria-hidden="true">↗</span>
+            </span>
+          </button>
+
+          <!-- 06 -->
+          <button class="photo-card card--06" type="button" data-category="gym" data-number="06"
+                  data-full="assets/photos/06-gym-bros.jpg" data-title="Gym bros" data-tag="Gym"
+                  data-location="Iron paradise" data-cursor="view" aria-label="Open frame 06, Gym bros">
+            <span class="photo-card__frame">
+              <img src="assets/photos/06-gym-bros.jpg"
+                   srcset="assets/photos/06-gym-bros-800.jpg 800w, assets/photos/06-gym-bros.jpg 1200w"
+                   sizes="(max-width: 700px) 92vw, (max-width: 1024px) 44vw, 25vw"
+                   alt="Gym selfie with a friend in the background"
+                   width="1200" height="1600" loading="lazy" decoding="async">
+              <span class="photo-card__shade" aria-hidden="true"></span>
+              <span class="photo-card__index">06</span>
+              <span class="photo-card__tag">Gym</span>
+              <span class="photo-card__open" aria-hidden="true">View frame <i>↗</i></span>
+            </span>
+            <span class="photo-card__meta">
+              <span class="photo-card__titles">
+                <span class="photo-card__title">Gym bros</span>
+                <span class="photo-card__loc">Iron paradise</span>
+              </span>
+              <span class="photo-card__arrow" aria-hidden="true">↗</span>
+            </span>
+          </button>
+
+          <!-- 02 -->
+          <button class="photo-card card--02" type="button" data-category="portrait" data-number="02"
+                  data-full="assets/photos/02-tongue-out.jpg" data-title="Tongue out" data-tag="Portrait"
+                  data-location="Mirror check" data-cursor="view" aria-label="Open frame 02, Tongue out">
+            <span class="photo-card__frame">
+              <img src="assets/photos/02-tongue-out.jpg"
+                   srcset="assets/photos/02-tongue-out-800.jpg 800w, assets/photos/02-tongue-out.jpg 813w"
+                   sizes="(max-width: 700px) 92vw, (max-width: 1024px) 44vw, 33vw"
+                   alt="Close-up portrait with tongue out, wearing a white tee"
+                   width="813" height="1600" loading="lazy" decoding="async">
+              <span class="photo-card__shade" aria-hidden="true"></span>
+              <span class="photo-card__index">02</span>
+              <span class="photo-card__tag">Portrait</span>
+              <span class="photo-card__open" aria-hidden="true">View frame <i>↗</i></span>
+            </span>
+            <span class="photo-card__meta">
+              <span class="photo-card__titles">
+                <span class="photo-card__title">Tongue out</span>
+                <span class="photo-card__loc">Mirror check</span>
+              </span>
+              <span class="photo-card__arrow" aria-hidden="true">↗</span>
+            </span>
+          </button>
+
+          <!-- 05 -->
+          <button class="photo-card card--05" type="button" data-category="life" data-number="05"
+                  data-full="assets/photos/05-off-duty.jpg" data-title="Off duty" data-tag="Life"
+                  data-location="The crib" data-cursor="view" aria-label="Open frame 05, Off duty">
+            <span class="photo-card__frame">
+              <img src="assets/photos/05-off-duty.jpg"
+                   srcset="assets/photos/05-off-duty-800.jpg 800w, assets/photos/05-off-duty.jpg 900w"
+                   sizes="(max-width: 700px) 92vw, (max-width: 1024px) 44vw, 33vw"
+                   alt="Relaxed on a wooden sofa with snacks and drinks"
+                   width="900" height="1600" loading="lazy" decoding="async">
+              <span class="photo-card__shade" aria-hidden="true"></span>
+              <span class="photo-card__index">05</span>
+              <span class="photo-card__tag">Life</span>
+              <span class="photo-card__open" aria-hidden="true">View frame <i>↗</i></span>
+            </span>
+            <span class="photo-card__meta">
+              <span class="photo-card__titles">
+                <span class="photo-card__title">Off duty</span>
+                <span class="photo-card__loc">The crib</span>
+              </span>
+              <span class="photo-card__arrow" aria-hidden="true">↗</span>
+            </span>
+          </button>
+
+          <!-- Note tile -->
+          <aside class="note-tile card--note" aria-label="Archive note">
+            <span class="note-tile__star" aria-hidden="true">✳</span>
+            <span class="note-tile__kicker">VOL. 01 — 2026</span>
+            <p class="note-tile__title">MORE REPS.<br>MORE FRAMES.</p>
+            <p class="note-tile__copy">Eight down, infinite to go. The archive grows every session.</p>
+            <a class="note-tile__link" href="#reel">Watch the reel <span aria-hidden="true">↘</span></a>
+          </aside>
+        </div>
+
+        <div class="archive__foot" data-reveal>
+          <p>THE ARCHIVE IS NEVER FINISHED <span aria-hidden="true">—</span> VOL. 02 LOADING SOON.</p>
+          <button class="text-link" id="random-frame" type="button">Surprise me <span aria-hidden="true">↗</span></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Story -->
+    <section class="section story" id="story">
+      <div class="container story__grid">
+        <div class="story__visual" data-reveal>
+          <div class="story__photo-wrap">
+            <span class="story__block" aria-hidden="true"></span>
+            <figure class="story__photo">
+              <img src="assets/photos/02-tongue-out.jpg"
+                   srcset="assets/photos/02-tongue-out-800.jpg 800w, assets/photos/02-tongue-out.jpg 813w"
+                   sizes="(max-width: 1024px) 82vw, 36vw"
+                   alt="Close-up portrait with tongue out, wearing a white tee"
+                   width="813" height="1600" loading="lazy" decoding="async">
+              <figcaption>FRAME 02 — THE FACE OF THE ARCHIVE</figcaption>
+            </figure>
+            <div class="story__stamp" aria-hidden="true">
+              <span>CERTIFIED</span>
+              <strong>GYM<br>RAT</strong>
+              <span>EST. 2026</span>
+            </div>
+            <span class="story__plus" aria-hidden="true">+</span>
+          </div>
+        </div>
+
+        <div class="story__copy">
+          <p class="eyebrow" data-reveal>
+            <span class="eyebrow__num">02</span>
+            <span class="eyebrow__line"></span>
+            <span>The story</span>
+          </p>
+          <h2 class="display display--lg" data-reveal>BUILT DIFFERENT.<br><em>shot honest.</em></h2>
+          <div class="story__text" data-reveal data-reveal-delay="1">
+            <p class="story__lead">This started as a camera roll. Then it became a photo library — eight frames pulled from the gym floor, the street and the quiet in-between.</p>
+            <p>No studio lights. No perfect angles. Just the suit you wear twice a year, the sofa you sink into after a long day, the set you almost didn't finish, and the friends who hype you up anyway.</p>
+          </div>
+
+          <ul class="stats" data-reveal>
+            <li class="stat">
+              <span class="stat__value" data-count="8">00</span>
+              <span class="stat__label">Frames kept</span>
+            </li>
+            <li class="stat">
+              <span class="stat__value" data-count="3">00</span>
+              <span class="stat__label">Gym sessions</span>
+            </li>
+            <li class="stat">
+              <span class="stat__value" data-count="1">00</span>
+              <span class="stat__label">Solid crew</span>
+            </li>
+            <li class="stat">
+              <span class="stat__value" data-count="0">00</span>
+              <span class="stat__label">Filters used</span>
+            </li>
+          </ul>
+
+          <blockquote class="story__quote" data-reveal>
+            <p>“Show up. Lift heavy. Stay humble. Take the photo.”</p>
+            <cite>— the rat code, probably</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reel -->
+    <section class="section reel" id="reel">
+      <div class="container reel__head">
+        <div>
+          <p class="eyebrow" data-reveal>
+            <span class="eyebrow__num">03</span>
+            <span class="eyebrow__line"></span>
+            <span>The reel</span>
+          </p>
+          <h2 class="display display--lg" data-reveal>ALL KILLER.<br><em>no filler.</em></h2>
+        </div>
+        <div class="reel__side" data-reveal data-reveal-delay="1">
+          <p>Eight frames on repeat. Hover to pause the motion, click any frame to open the full-size photo.</p>
+          <button class="text-link text-link--button" id="open-slideshow" type="button">Open slideshow <span aria-hidden="true">↗</span></button>
+        </div>
+      </div>
+
+      <div class="reel__marquees" aria-label="Photo reel">
+        <div class="reel-marquee">
+          <div class="reel-track" id="reel-track-a"></div>
+        </div>
+        <div class="reel-marquee reel-marquee--reverse">
+          <div class="reel-track" id="reel-track-b"></div>
+        </div>
+      </div>
+
+      <div class="container">
+        <p class="reel__hint" data-reveal>
+          <span aria-hidden="true">✳</span> HOVER TO PAUSE <span aria-hidden="true">/</span> CLICK TO OPEN <span aria-hidden="true">/</span> ARROW KEYS IN VIEWER
+        </p>
+      </div>
+    </section>
+
+    <!-- Vibe -->
+    <section class="vibe" id="vibe">
+      <div class="vibe__media" aria-hidden="true">
+        <img src="assets/photos/07-heavy-lift.jpg"
+             srcset="assets/photos/07-heavy-lift-800.jpg 800w, assets/photos/07-heavy-lift.jpg 1200w"
+             sizes="100vw" alt="" width="1200" height="1600" loading="lazy" decoding="async" id="vibe-image">
+      </div>
+      <div class="vibe__scrim" aria-hidden="true"></div>
+
+      <div class="container vibe__inner">
+        <div class="vibe__top">
+          <p class="eyebrow eyebrow--light">
+            <span class="eyebrow__num">04</span>
+            <span class="eyebrow__line"></span>
+            <span>The vibe check</span>
+          </p>
+          <div class="vibe__badges" aria-hidden="true">
+            <span>EST. 2026</span>
+            <span>8 / 8 FRAMES</span>
+          </div>
+        </div>
+
+        <blockquote class="vibe__quote" data-reveal>
+          <span class="vibe__line">NO FILTER.</span>
+          <span class="vibe__line vibe__line--serif"><em>just reps.</em></span>
+        </blockquote>
+
+        <div class="vibe__bottom" data-reveal>
+          <p>A photo library for the ones who show up — even on the days the lighting doesn't.</p>
+          <a class="btn btn--light" href="#archive">
+            <span>Back to the archive</span>
+            <span class="btn__icon" aria-hidden="true">↖</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Next / Footer -->
+    <footer class="site-footer" id="next">
+      <div class="container">
+        <p class="eyebrow" data-reveal>
+          <span class="eyebrow__num">05</span>
+          <span class="eyebrow__line"></span>
+          <span>The next frame</span>
+        </p>
+
+        <div class="footer__hero">
+          <h2 class="display display--xl" data-reveal>SEE YOU IN<br><em>the next frame.</em></h2>
+          <div class="footer__cta" data-reveal data-reveal-delay="1">
+            <p>More reps. More late nights. More blurry gym selfies. This is only volume one — save it, share it, send it to the group chat.</p>
+            <div class="footer__actions">
+              <button class="btn btn--solid" id="share-btn" type="button">
+                <span>Share the archive</span>
+                <span class="btn__icon" aria-hidden="true">↗</span>
+              </button>
+              <a class="btn btn--ghost btn--top" href="#top">
+                <span>Back to top</span>
+                <span class="btn__icon" aria-hidden="true">↑</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__grid">
+          <div class="footer__brand-block">
+            <a class="brand brand--footer" href="#top" aria-label="GYMRATBURAT PHOTOS — back to top">
+              <span class="brand__mark" aria-hidden="true">✳</span>
+              <span class="brand__text">GYMRATBURAT <em>photos</em></span>
+            </a>
+            <p>An independent photo library.<br>Volume one — eight frames.<br>Shot on a phone, kept for the plot.</p>
+          </div>
+
+          <div class="footer__col">
+            <span class="micro-label">INDEX</span>
+            <a href="#archive">01 — Archive</a>
+            <a href="#story">02 — Story</a>
+            <a href="#reel">03 — Reel</a>
+            <a href="#vibe">04 — Vibe</a>
+          </div>
+
+          <div class="footer__col">
+            <span class="micro-label">LOCAL TIME</span>
+            <span class="footer__time" id="local-time">--:--</span>
+            <span class="footer__tz" id="local-zone">LOCAL</span>
+            <span class="footer__status"><i aria-hidden="true"></i> ARCHIVE ONLINE</span>
+          </div>
+
+          <div class="footer__col">
+            <span class="micro-label">COLOPHON</span>
+            <p>HTML + CSS + vanilla JS.<br>Anton, Space Grotesk &amp; Instrument Serif.<br>No templates. No filters.</p>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <span>© 2026 GYMRATBURAT PHOTOS</span>
+          <span>SHOT ON PHONE. BUILT WITH CODE.</span>
+          <span>VOL. 01 — 08 FRAMES</span>
+        </div>
+
+        <div class="footer__wordmark" aria-hidden="true">GYMRATBURAT</div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <div class="lightbox__backdrop" data-close></div>
+    <div class="lightbox__shell" role="dialog" aria-modal="true" aria-labelledby="lb-title" aria-describedby="lb-location">
+      <header class="lightbox__top">
+        <span class="lightbox__brand">GYMRATBURAT <em>/ photos</em></span>
+        <div class="lightbox__counter" aria-label="Frame position"><span id="lb-current">01</span><i>/</i><span>08</span></div>
+        <div class="lightbox__actions">
+          <button class="lb-autoplay" id="lb-autoplay" type="button" aria-pressed="false">
+            <span class="lb-autoplay__icon" aria-hidden="true"><i></i></span>
+            <span class="lb-autoplay__label">Play</span>
+          </button>
+          <a class="lb-save" id="lb-save" href="#" download>Save <span aria-hidden="true">↓</span></a>
+          <button class="lb-close" id="lb-close" type="button" aria-label="Close photo viewer">Close <span aria-hidden="true">✕</span></button>
+        </div>
+      </header>
+
+      <div class="lightbox__stage">
+        <button class="lb-nav lb-nav--prev" id="lb-prev" type="button" aria-label="Previous photo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M15 19l-7-7 7-7"/></svg>
+        </button>
+
+        <figure class="lightbox__figure" id="lb-figure">
+          <img id="lb-image" src="" alt="">
+          <figcaption class="lightbox__caption-mobile" id="lb-caption-mobile"></figcaption>
+        </figure>
+
+        <button class="lb-nav lb-nav--next" id="lb-next" type="button" aria-label="Next photo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+
+      <footer class="lightbox__bottom">
+        <div class="lightbox__info">
+          <span class="lightbox__tag" id="lb-tag">Life</span>
+          <h2 class="lightbox__title" id="lb-title">Peace out</h2>
+          <p class="lightbox__loc" id="lb-location">Living room</p>
+        </div>
+        <div class="lightbox__thumbs" id="lb-thumbs" aria-label="All frames"></div>
+        <p class="lightbox__hint">USE <kbd>←</kbd> <kbd>→</kbd> TO EXPLORE <span aria-hidden="true">/</span> <kbd>ESC</kbd> TO CLOSE</p>
+      </footer>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
